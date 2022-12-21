@@ -1,0 +1,7 @@
+<footer id="footer" class="page-footer">
+    <div class="copyright-notice">Copyright 2022 © <span> UMFST G.E. Palade Tg.Mureș</span></div>
+</footer>
+
+{{/*  Main js script  */}}
+{{ $index := resources.Get "scripts/index.js" | resources.Minify | resources.Fingerprint }}
+<script defer src="{{ $index.RelPermalink }}" {{ template "integrity" $index }}></script>

@@ -1,0 +1,46 @@
+// Theme variables
+:root
+{
+    --background-primary: #ffffff;
+    --background-secondary: #13181F;
+
+    --text-normal-primary: #000000;
+    --text-normal-secondary: #7E8C9A;
+    --text-accent: #4C6EF5;
+    --text-hover:  #F5D34C;
+
+    --title-text-color: #FF0878;
+    --description-text-color: #eeeeee;
+}
+
+// Transitions
+:root
+{
+    --general-transition-time: 0.15s;
+    --hover-transition-time:   0.15s;
+}
+
+// Layout Dimensions
+:root
+{
+    --site-wrapper-width: 768px;
+    --site-wrapper-width-max: 768px;
+    
+    --navbar-height: 80px;
+}
+
+// Typography
+:root
+{
+    // Default font
+    --default-font: "wotfardregular";
+
+    // Font sizes
+    --font-size-xxsm: 14px;
+    --font-size-xsm: 16px;
+    --font-size-sm: 18px;
+    --font-size-m: 20px;
+    --font-size-lg: 24px;
+    --font-size-xlg: 28px;
+    --font-size-xxlg: 32px;
+}

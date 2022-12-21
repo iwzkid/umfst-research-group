@@ -1,0 +1,22 @@
+<header id="header">
+    <nav class="navbar">
+        <div class="logo">
+            {{ $logoHome := "/" | relLangURL }}
+            <a class="desktop" href="{{ $logoHome }}">UMFST - <br> Research Group</a>
+            <a class="mobile"  href="{{ $logoHome }}">UMFST - <br> Research Group</a>
+        </div>
+        <div class="links">
+            <ul class="list">
+                {{ $currentPage := . }}
+                {{ range .Site.Menus.main }}
+                    {{ $menu_item_url := .URL | relLangURL }}
+                    {{ $page_url := $currentPage.RelPermalink | relLangURL }}
+                    {{ $icon := .Params.Icon }}
+                    <li class="link">
+                        <a href="{{ .URL | relLangURL }}"><p>{{ .Name }}</p></a>
+                    </li>
+                {{ end }}
+            </ul>
+        </div>
+    </nav>
+</header>

@@ -1,0 +1,31 @@
+body
+{
+    display: grid;
+    background-color: var(--background-primary);
+    font-family: var(--default-font);
+    color: var(--text-normal-primary);
+}
+
+.site-wrapper
+{
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    justify-self: center;
+    
+    gap: 20px;
+
+    padding: 0px 60px;
+    padding-top: 60px;
+    
+    width: 85%;
+    height: 100%;
+
+    transition: width var(--general-transition-time), transform var(--general-transition-time);
+
+    @media screen and (max-width: 1220px)
+    {
+        width: 100%;
+        padding: 0px 30px;
+        padding-top: 30px;
+    }
+}

@@ -1,0 +1,71 @@
+header
+{
+    .navbar
+    {
+        display: grid;
+        grid-template-columns: auto 1fr;
+
+        .logo
+        {
+            a
+            {
+                text-transform: uppercase;
+                justify-self: end;
+                text-decoration: none;
+                color: var(--text-normal-primary);
+                font-size: var(--font-size-lg);
+                font-weight: bold;
+
+
+                &.desktop
+                {
+                    display: block;
+    
+                    @media screen and (max-width: 768px)
+                    {
+                        display: none;    
+                    }
+                }
+    
+                &.mobile
+                {
+                    display: none;
+    
+                    @media screen and (max-width: 768px)
+                    {
+                        display: block;
+                    }
+                }
+            }
+        }
+
+        .links
+        {
+            justify-self: end;
+
+            ul
+            {
+                li
+                {
+                    list-style: none;
+                    display: grid;
+                    margin-bottom: 5px;
+
+                    a
+                    {
+                        text-transform: uppercase;
+                        justify-self: end;
+                        text-decoration: none;
+                        color: var(--text-normal-primary);
+                        font-size: var(--font-size-sm);
+
+                        &:hover
+                        {
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

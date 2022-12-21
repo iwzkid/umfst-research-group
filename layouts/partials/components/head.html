@@ -1,0 +1,22 @@
+{{/*  Metadata  */}}
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+{{/*  Integrity  */}}
+{{ define "integrity" }}
+    {{ if (urls.Parse .Permalink).Host }}
+        integrity="{{ .Data.Integrity }}" crossorigin="anonymous"
+    {{ end }}
+{{ end }}
+
+{{/*  Title  */}}
+<title>
+    {{/*  {{ partial "data/head-title.html" . }}  */}}
+</title>
+
+{{/*  Loading styles  */}}
+{{ $sass := resources.Get "/styles/index.scss" }}
+{{ $styles := $sass | resources.ExecuteAsTemplate "index.scss" . | resources.ToCSS | resources.Minify | resources.Fingerprint }}
+
+<link rel="stylesheet" href="{{ $styles.RelPermalink }}" {{ template "integrity" $styles }}>

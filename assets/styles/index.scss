@@ -1,0 +1,15 @@
+// Core
+@import "./core/normalize.scss";
+@import "./core/fonts.scss";
+@import "./core/variables.scss";
+@import "./core/general.scss";
+@import "./core/helpers.scss";
+
+// Components
+@import "./partials/header.scss";
+@import "./partials/footer.scss";
+
+// Pages
+@import "./pages/home.scss";
+
+// Shortcodes

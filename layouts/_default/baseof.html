@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {{ partial "components/head" . }}
+</head>
+<body id="body">
+    <div id="site-wrapper" class="site-wrapper">
+        {{ partial "components/header" . }}
+        {{ block "main" . }}{{ end }}
+        {{ partial "components/footer" . }}
+    </div>
+</body>
+</html>
