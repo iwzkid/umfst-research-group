@@ -1,0 +1,7 @@
+{
+    "baseURL": "http://example.org/",
+    "languageCode": "en-us",
+    "title": "Vasile Câmpeanu",
+    "defaultContentLanguage": "en",
+    "enableGitInfo": true
+}
